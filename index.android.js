@@ -8,8 +8,11 @@ import React, {
   Component,
   StyleSheet,
   Text,
+  TextInput,
   View
 } from 'react-native';
+
+React; // to circumvent linter warning
 
 class AwesomeProject extends Component {
   render() {
@@ -24,6 +27,7 @@ class AwesomeProject extends Component {
         <Text style={styles.instructions}>
           Shake or press menu button for dev menu
         </Text>
+        <TextInput placeholder="Numbers here plz" style={styles.numberInput} keyboardType="numeric" />
       </View>
     );
   }
@@ -45,6 +49,12 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#333333',
     marginBottom: 5,
+  },
+  numberInput: {
+    justifyContent: 'flex-end',
+    position: 'absolute',
+    bottom: 0,
+    textAlign: 'center',
   },
 });
 

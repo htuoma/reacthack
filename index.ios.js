@@ -8,7 +8,8 @@ import React, {
   Component,
   StyleSheet,
   Text,
-  View
+  View,
+  TextInput,
 } from 'react-native';
 
 class AwesomeProject extends Component {
@@ -16,7 +17,7 @@ class AwesomeProject extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          Welcome to React Native! asdasd
         </Text>
         <Text style={styles.instructions}>
           To get started, edit index.ios.js
@@ -25,7 +26,14 @@ class AwesomeProject extends Component {
           Press Cmd+R to reload,{'\n'}
           Cmd+D or shake for dev menu
         </Text>
-      </View>
+        <TextInput
+            style={{height: 40, borderColor: 'gray', borderWidth: 1}}
+            keyboardType="numeric"
+        />
+          <Text style={styles.instructions}>
+                asdasd
+          </Text>
+        </View>
     );
   }
 }
